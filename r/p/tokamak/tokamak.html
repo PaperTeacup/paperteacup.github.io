@@ -1,0 +1,48 @@
+	<!doctype html>
+<html>
+	<head>
+		<!-- This styles everything with the class reveal or slides. -->
+		<style>
+			.reveal .slides { margin: 0; text-align: left;}
+		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Toroidal Fusion</title>
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../dist/theme/black.css" id="theme">
+		<link rel="icon" href="../../favicon.ico">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="markdown.md" data-separator="^---$"></section>
+			</div>
+		</div>
+
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+		<script src="../../plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				autoAnimateEasing: 'cubic-bezier(0.87, 0, 0.13, 1)',
+				autoAnimateDuration: 0.8,
+				hash: true,
+				showNotes: true,
+				transition: 'fade',
+				transitionSpeed: 'fast',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealMath]
+			});
+		</script>
+	</body>
+</html>
